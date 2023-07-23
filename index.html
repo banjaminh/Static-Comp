@@ -118,34 +118,53 @@
                     </ul>
                 </nav>
                 <section class="graph-section">
-                    <div class="circle-graphs">
-                    <svg viewBox="0 0 40 40" class="circle-graph">
-                        <path class="circle"
-                          stroke-dasharray="92, 100"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <text x="8.5" y="21.35" class="percentage" style="font-size: .7em; fill: white;">95%</text>
-                      </svg>
-                      <svg viewBox="0 0 40 40" class="circle-graph">
-                        <path class="circle"
-                          stroke-dasharray="85, 100"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <text x="11" y="21.35" class="percentage" style="font-size: .7em; fill: white;">9.0</text>
-                      </svg>
-                      <svg viewBox="0 0 40 40" class="circle-graph">
-                        <path class="circle"
-                          stroke-dasharray="90, 100"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <text x="11" y="21.35" class="percentage" style="font-size: .7em; fill: white;">9.1</text>
-                      </svg>
+                    <div class="circle-graph-section">
+                        <div class="circle-graphs">
+                            <div class="graph-container">
+                            <svg viewBox="0 0 40 40" class="circle-graph">
+                                <path class="circle"
+                                stroke-dasharray="92, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="8.5" y="21.35" class="percentage" style="font-size: .7em; fill: white;">95%</text>
+                            </svg>
+                            <div class="graph-text">Rotten</div>
+                            </div>
+                            <div class="graph-container">
+                            <svg viewBox="0 0 40 40" class="circle-graph">
+                                <path class="circle"
+                                stroke-dasharray="85, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="11" y="21.35" class="percentage" style="font-size: .7em; fill: white;">9.0</text>
+                            </svg>
+                            <div class="graph-text">Metacritic</div>
+                            </div>
+                            <div class="graph-container">
+                            <svg viewBox="0 0 40 40" class="circle-graph">
+                                <path class="circle"
+                                stroke-dasharray="90, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="11" y="21.35" class="percentage" style="font-size: .7em; fill: white;">9.1</text>
+                            </svg>
+                            <div class="graph-text">IMDb</div>
+                            </div>
+                        </div>
+                        <!-- <div class="circle-labels">
+                            <p class="circle-graph-labels-left">Rotten</p>
+                            <p class="circle-graph-labels-middle">Metacritic</p>
+                            <p class="circle-graph-labels-right">IMDb</p>
+                        </div> -->
+                        <div class="circle-button-section">
+                            <button type="button" class="circle-bottom">Average Movie Rating</button>
+                        </div>
                     </div>
                     <div class="bar-graph-section">
                         <div class="bar-graph">
@@ -161,8 +180,11 @@
                         <div class="bar-label">
                             <button type="button" class="bar-bottom">Top Grossing Movies</button>
                         </div>
-
                     </div>
+                </section>
+                <hr>
+                <section class="about-section">
+
                 </section>
             </section>
         </main>

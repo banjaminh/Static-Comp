@@ -216,7 +216,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: chocolate;
+    background-color: rgba(230, 237, 238, 0.2);
     height:100%;
     width: 8%;
     margin-left: 0px;
@@ -224,7 +224,7 @@ label{
 }
 
 .info-page{
-    background-color: darkkhaki;
+    background-color: rgb(5, 4, 0);
 }
 
 .graph-section{
@@ -242,23 +242,28 @@ label{
 }
   
 .circle {
-    stroke: rgba(239, 245, 244, 0.6);
+    stroke: rgba(237, 73, 13, 0.6);
     fill: none;
     stroke-width: 2;
     stroke-linecap: round;
 }
 
+.circle-graph-section{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+}
 .circle-graphs{
     margin-top:30px;
-    width: 60%;
+    width: 100%;
     display: flex;
-    margin-left: 40px;
     height: 75%;
 }
 
 .bar-graph-section{
-    width: 50%;
-    background-color: rgb(15, 16, 15);
+    width: 40%;
+    background-color: black;
     height: 100%;
   }
 
@@ -266,13 +271,13 @@ label{
     display: flex;
     justify-content: space-between;
     width: 400px;
-    height: 75%;
+    height: 70%;
     margin: 0 auto;
     transform: scaleY(-1);
 }
 .bar{
     width: 10px;
-    background-color: #687af0;
+    background-color: rgba(104, 122, 240, .7);
     margin: 0 5px;
     transform: scaleY(-1);
 }
@@ -280,17 +285,69 @@ label{
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .bar-bottom{
     margin-top: 8px;
-    height: 25px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(8, 9, 9, 0.6);
+    background-color: rgba(49, 104, 104, 0.6);
     color:rgb(241, 250, 248);
     border-radius: 32px;
     border: 2px solid whitesmoke;
+}
+
+.circle-graph-labels-left{
+    color:white;
+    margin-left: 110px;
+}
+
+.circle-graph-labels-middle{
+    color:white;
+    margin-left: 170px;
+}
+.circle-graph-labels-right{
+    color:white;
+    margin-left: 177px;
+}
+
+.circle-labels{
+    display: flex;
+    height: 18%;
+    margin-bottom: 5px;
+}
+
+.circle-button-section{
+    display: flex;
+    margin-left: 430px;
+}
+.circle-bottom{
+    margin-top: 8px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 104, 104, 0.6);
+    color:rgb(241, 250, 248);
+    border-radius: 32px;
+    border: 2px solid whitesmoke;
+}
+
+.graph-container{
+    width: 33%;
+}
+
+.graph-text{
+    color: white;
+    margin-left: 130px;
+}
+
+
+
+.circle-graphs .graph-container svg{
+    width: 120px;
+    height: 120px;
 }

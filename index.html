@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="fa-events-icons-ready">
     <head>
-        <script src="https://use.fontawesome.com/e58093a846.js"></script>
-        <link href="https://use.fontawesome.com/e58093a846.css" media="all" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta charset="utf-8">
         <title>Christopher Nolan</title>
         <meta name="description" content="Christopher Nolan Information">
@@ -24,8 +23,14 @@
                     <hr>
                     <h4>Main</h4>
                     <ul>
-                        <li>HOME</li>
-                        <li>JOBS</li>
+                        <li>
+                            <i class="fa fa-house side-bar-icon"></i>
+                            HOME
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-film side-bar-icon"></i>
+                            FILMS
+                        </li>
                         <li>RESUMES</li>
                         <li>TASKS</li>
                         <li>CALENDAR</li>
@@ -103,7 +108,62 @@
                         </button>
                     </div>
                 </header>
-                <h2>MAIN INFO PAGE</h2>
+                <nav>
+                    <ul class="nav-info">
+                        <li class="info-tabs">ABOUT</li>
+                        <li class="info-tabs">BIOGRAPHY</li>
+                        <li class="info-tabs">FILMS</li>
+                        <li class="info-tabs">SET PHOTOS</li>
+                        <li class="info-tabs">NEWS</li>
+                    </ul>
+                </nav>
+                <section class="graph-section">
+                    <div class="circle-graphs">
+                    <svg viewBox="0 0 40 40" class="circle-graph">
+                        <path class="circle"
+                          stroke-dasharray="92, 100"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="8.5" y="21.35" class="percentage" style="font-size: .7em; fill: white;">95%</text>
+                      </svg>
+                      <svg viewBox="0 0 40 40" class="circle-graph">
+                        <path class="circle"
+                          stroke-dasharray="85, 100"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="11" y="21.35" class="percentage" style="font-size: .7em; fill: white;">9.0</text>
+                      </svg>
+                      <svg viewBox="0 0 40 40" class="circle-graph">
+                        <path class="circle"
+                          stroke-dasharray="90, 100"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="11" y="21.35" class="percentage" style="font-size: .7em; fill: white;">9.1</text>
+                      </svg>
+                    </div>
+                    <div class="bar-graph-section">
+                        <div class="bar-graph">
+                            <div class="bar" style="height: 85px;"></div>
+                            <div class="bar" style="height: 90px;"></div>
+                            <div class="bar" style="height: 94px;"></div>
+                            <div class="bar" style="height: 98px;"></div>
+                            <div class="bar" style="height: 85px;"></div>
+                            <div class="bar" style="height: 90px;"></div>
+                            <div class="bar" style="height: 94px;"></div>
+                            <div class="bar" style="height: 98px;"></div>
+                        </div>
+                        <div class="bar-label">
+                            <button type="button" class="bar-bottom">Top Grossing Movies</button>
+                        </div>
+
+                    </div>
+                </section>
             </section>
         </main>
     </body>

@@ -146,3 +146,54 @@ label{
     justify-content: center;
     background-color: rgb(250, 249, 246);
 }
+
+.name-subscribe-buttons{
+    height: 85%;
+    display: flex;
+}
+
+.status-button{
+    margin-top: 200px;
+    margin-left: 65%;
+    width: 70px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+.save-button{
+    margin-top: 200px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+.edit-button{
+    margin-top: 200px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+.delete-button{
+    margin-top: 200px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+
+
+.edit-button img,
+.delete-button img,
+.save-button img,
+.status-button img{
+    width: 20px;
+    height: 20px;
+}

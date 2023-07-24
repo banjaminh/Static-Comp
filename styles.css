@@ -9,7 +9,6 @@ main{
     height: 100%;
     border: 2px solid black;
     box-sizing: border-box;
-    background-color: black;
 }
 
 .info-page{
@@ -17,6 +16,8 @@ main{
     box-sizing: border-box;
     height: 100%;
     margin-left: 12%;
+    overflow: auto;
+    background-image: url('./assets/dark-knight.jpg');
 }
 
 .circle-image{
@@ -49,7 +50,7 @@ hr{
     height: 1px;
     width: 90%;
     margin: auto;
-    background-color: rgb(131, 124, 137);
+    background-color: rgba(131, 124, 137,.4);
 }
 
 h4{
@@ -79,6 +80,8 @@ li{
     margin-bottom: 10px;
     font-size: 13px;
     color:beige;
+    display: flex;
+    margin-left:10px;
 }
 
 * {
@@ -102,7 +105,7 @@ label{
 }
 
 .search-bar{
-    height: 15%;
+    height: 8%;
     display: flex;
 }
 
@@ -116,12 +119,12 @@ label{
 }
 
 .info-page header{
-    height: 300px;
-    border: 1px solid blue;
+    height: 500px;
     border-top: none;
-    background-image: url('./assets/theatre.jpg');
-    background-size: cover;
-    background-position: center center;
+    background-color: rgba(0, 0, 0, .3);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .search-buttons{
@@ -145,4 +148,284 @@ label{
     flex-direction: column;
     justify-content: center;
     background-color: rgb(250, 249, 246);
+}
+
+.name-subscribe-buttons{
+    display: flex;
+}
+
+.status-button{
+    
+    margin-left: 45%;
+    width: 70px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+.name-location{
+    color:beige;
+    font-weight: lighter;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.fa-location-dot{
+    color:azure;
+}
+
+.save-button{
+    
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+.edit-button{
+   
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+.delete-button{
+    
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+
+
+.edit-button img,
+.delete-button img,
+.save-button img,
+.status-button img{
+    width: 20px;
+    height: 20px;
+}
+
+.side-bar-icon{
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.nav-info{
+    margin: 0px;
+    display: flex;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.info-tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 5, 5, 0.2);
+    height:100%;
+    width: 8%;
+    margin-left: 0px;
+    border-right: 1px solid rgb(142, 115, 115);
+}
+
+
+
+.graph-section{
+    height: 250px;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+.circle-graph{
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 150px;
+}
+  
+.circle {
+    stroke: rgba(237, 73, 13, 0.6);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.circle-graph-section{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+}
+.circle-graphs{
+    margin-top:30px;
+    width: 100%;
+    display: flex;
+    height: 75%;
+}
+
+.bar-graph-section{
+    width: 40%;
+    height: 100%;
+  }
+
+.bar-graph{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 70%;
+    margin: 0 auto;
+    transform: scaleY(-1);
+}
+.bar{
+    width: 10px;
+    background-color: rgba(241, 241, 246, 0.7);
+    margin: 0 5px;
+    transform: scaleY(-1);
+}
+.bar-label{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bar-bottom{
+    margin-top: 8px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 104, 104, 0.6);
+    color:rgb(241, 250, 248);
+    border-radius: 32px;
+    border: 2px solid whitesmoke;
+}
+
+.circle-graph-labels-left{
+    color:white;
+    margin-left: 110px;
+}
+
+.circle-graph-labels-middle{
+    color:white;
+    margin-left: 170px;
+}
+.circle-graph-labels-right{
+    color:white;
+    margin-left: 177px;
+}
+
+.circle-labels{
+    display: flex;
+    height: 18%;
+    margin-bottom: 5px;
+}
+
+.circle-button-section{
+    display: flex;
+    margin-left: 430px;
+}
+.circle-bottom{
+    margin-top: 8px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 104, 104, 0.6);
+    color:rgb(241, 250, 248);
+    border-radius: 32px;
+    border: 2px solid whitesmoke;
+}
+
+.graph-container{
+    width: 33%;
+}
+
+.graph-text{
+    color: white;
+    margin-left: 130px;
+}
+
+
+
+.circle-graphs .graph-container svg{
+    width: 120px;
+    height: 120px;
+}
+
+.table-article{
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+    border: none;
+}
+
+.table-head-text{
+    color:beige;
+    font-weight: lighter;
+}
+.info-table{
+    background-color: beige;
+    width: 70%;
+    
+}
+
+.table-article thead{
+    background-color: cadetblue;
+}
+
+.table-edit{
+    text-align: left;
+}
+
+table{
+    background-color: rgba(255, 255, 255, .4);
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+.edit-button-info{
+    margin-left:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: gray;
+    color:white;
+}
+
+th{
+    background-color: rgba(53, 97, 98,.6);
+    height: 40px;
+}
+
+tr{
+    min-height: 60px;
+}
+
+td{
+    height: 100px;
+    padding: 0px 25px;
+}
+
+.description-table{
+    height: 100px;
+    overflow: auto;
+}
+
+.left-table{
+    font-size: .8em;
+}
+
+body{
+    background-image: url('./assets/dark-knight.jpg');
+}
+
+.lower-info-page{
+    background-color: rgba(0, 0, 0, .6);
 }
